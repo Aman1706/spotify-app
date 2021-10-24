@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This Spotify clone allows the user to do the following
+This Spotify clone which is made with React and Express allows the user to do the following
 
 1. Login in using their Spotify Account
 2. Search for artists or songs
