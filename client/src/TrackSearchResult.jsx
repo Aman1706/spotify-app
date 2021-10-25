@@ -8,7 +8,7 @@ import {
   ArtistText,
 } from './styles/TrackSearchResults.styles';
 
-export default function TrackSearchResult({ track, chooseTrack }) {
+const TrackSearchResult = ({ track, chooseTrack }) => {
   function handlePlay() {
     chooseTrack(track);
   }
@@ -22,4 +22,6 @@ export default function TrackSearchResult({ track, chooseTrack }) {
       </SongContainer>
     </ResultContainer>
   );
-}
+};
+
+export default TrackSearchResult;

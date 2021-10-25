@@ -17,7 +17,7 @@ const spotifyApi = new SpotifyWebApi({
   clientId: process.env.REACT_APP_CLIENT_ID,
 });
 
-export default function Dashboard({ code }) {
+const Dashboard = ({ code }) => {
   const accessToken = useAuth(code);
   const [search, setSearch] = useState('');
   const [searchResults, setSearchResults] = useState([]);
@@ -107,4 +107,6 @@ export default function Dashboard({ code }) {
       </PlayerContainer>
     </DashBoardContainer>
   );
-}
+};
+
+export default Dashboard;
